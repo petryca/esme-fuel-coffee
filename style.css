@@ -142,9 +142,6 @@ button.primary:hover {
     .main-grid {
         grid-template-columns: 1fr 1280px 1fr;
     }
-    .mid-col {
-        padding: 0 30px;
-    }
 }
 
 .mid-col>div:first-child {
@@ -160,15 +157,16 @@ button.primary:hover {
     border-bottom-left-radius: 20px;
 }
 
-@media (width > 1280px) {
+@media (width > 700px) {
     .mid-col>div:first-child {
-        padding: 0 30px;
+        padding: 0 40px;
     }
-    
-    .mid-col>div:last-child {
-        padding: 0 30px;
-    }
+}
 
+@media (width > 1280px) {    
+    .mid-col>div:last-child {
+        padding: 0 40px;
+    }
     .mid-col img {
         border-radius: 20px
     }
