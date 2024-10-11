@@ -303,6 +303,12 @@ button.primary:hover {
     gap: 30px;
 }
 
+.icons img {
+    width: 100px;
+    height: 100px;
+    justify-self: center;
+}
+
 @media (width > 700px) {
     .icons {
         margin-left: 40px;
@@ -313,6 +319,12 @@ button.primary:hover {
 
     .icons>div {
         text-align: left;
+    }
+
+    .icons img {
+        width: 100px;
+        height: 100px;
+        justify-self: start;
     }
 }
 
