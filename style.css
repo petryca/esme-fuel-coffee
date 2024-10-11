@@ -289,15 +289,18 @@ button.primary:hover {
 }
 
 .icons {
-    background-color: aqua;
     margin-left: 24px;
     margin-right: 24px;
     display: grid;
     grid-template-columns: 1fr;
+    gap: 60px;
 }
 
 .icons>div {
     outline: 1px solid red;
+    text-align: center;
+    display: grid;
+    gap: 30px;
 }
 
 @media (width > 700px) {
@@ -305,6 +308,11 @@ button.primary:hover {
         margin-left: 40px;
         margin-right: 40px;
         grid-template-columns: repeat(2, 1fr);
+        gap: 30px; /* maybe */
+    }
+
+    .icons>div {
+        text-align: left;
     }
 }
 
